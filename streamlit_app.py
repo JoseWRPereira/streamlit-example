@@ -16,13 +16,12 @@ dados = dados[['Ano','Despesa','Município','Total Despesas']]
 
 
 
-st.title("Análise de Dados da Saúde de São Paulo")
+st.title("Análise de Dados da Saúde de SP")
 
 st.sidebar.title("Menu")
 ano = st.sidebar.selectbox("Ano",anos,index=None)
 munic = st.sidebar.selectbox("Município",municipios,index=None)
 
-#df = dados.loc[dados.Município==" SAO PAULO"]
 df = dados
 
 if ano is not None:
